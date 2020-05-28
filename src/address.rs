@@ -55,6 +55,7 @@ impl fmt::Display for Address {
 
 /// Represents an RFC 5322 mailbox
 #[derive(PartialEq, Eq, Debug, Clone)]
+#[cfg_attr(feature = "serde-impls", derive(Serialize, Deserialize))]
 pub struct Mailbox {
     /// The given name for this address
     pub name: Option<String>,

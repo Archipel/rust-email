@@ -8,6 +8,10 @@ extern crate rand;
 #[macro_use]
 extern crate lazy_static;
 
+#[cfg(feature = "serde-impls")]
+#[macro_use]
+extern crate serde_derive;
+
 pub use crate::address::{Address, Mailbox};
 pub use crate::header::{FromHeader, Header, HeaderIter, HeaderMap, ToFoldedHeader, ToHeader};
 pub use crate::message::{MimeMessage, MimeMultipartType};

@@ -25,6 +25,7 @@ optional = true
 
 [features]
 nightly = []
+default = ["serde-impls"]
 serde-impls = ["serde", "serde_derive"]
 
 [build-dependencies]
